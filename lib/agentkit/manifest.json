@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-agendor",
+      "description": "Connect AI agents to Agendor using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-agendor/SKILL.md": "73e74c15486c85f1ae618a35113547d0d83a673c21be2c89d0e35872f94ba17a"
+  }
+}

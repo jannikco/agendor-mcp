@@ -1,37 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "700de43689bc880f997fffc58447b8c3b0692a29fd315732994f773a20f0b7b6",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://api.agendor.com.br/v3/swagger.json"
-  ],
   "id": "agendor-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Agendor MCP setup and connection checker",
-  "description": "Generate Agendor MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Agendor for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-agendor-mcp",
+  "sourceRevision": "137dc3f78b2236b758f99ced1202bee802505e35b8486ac38866b3070e1f9931",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://api.agendor.com.br/v3/swagger.json"
+  ],
+  "utility": {
+    "problem": "Prepare Agendor and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "agendor",
   "appName": "Agendor",
-  "providerDocs": "https://api.agendor.com.br/v3/swagger.json",
-  "providerWebsite": "https://www.agendor.com.br/",
-  "authentication": {
-    "type": "api_key_header",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://api.agendor.com.br/docs/",
-    "tenantRequired": false,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-agendor-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }
