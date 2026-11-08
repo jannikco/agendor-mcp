@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "700de43689bc880f997fffc58447b8c3b0692a29fd315732994f773a20f0b7b6",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://api.agendor.com.br/v3/swagger.json"
+  ],
+  "id": "agendor-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "Agendor MCP setup and connection checker",
+  "description": "Generate Agendor MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "agendor",
+  "appName": "Agendor",
+  "providerDocs": "https://api.agendor.com.br/v3/swagger.json",
+  "providerWebsite": "https://www.agendor.com.br/",
+  "authentication": {
+    "type": "api_key_header",
+    "requiredCredentialFields": [
+      "api_key"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://api.agendor.com.br/docs/",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-agendor-mcp"
+}
